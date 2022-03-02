@@ -5,13 +5,7 @@ import App from './App';
 import Test from './Test';
 import reportWebVitals from './reportWebVitals';
 import HelloComponent from './component/HelloComponent';
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
+import LoginComponent from './component/LoginComponent';
 
 // class StateFullComponent extends React.Component{
 //   render(){
@@ -22,7 +16,8 @@ import HelloComponent from './component/HelloComponent';
 // ReactDOM.render(<StateFullComponent />, document.getElementById('root'));
 // ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<Test />, document.getElementById('root'));
-ReactDOM.render(<HelloComponent />, document.getElementById('root'));
+// ReactDOM.render(<HelloComponent />, document.getElementById('root'));
+ReactDOM.render(<LoginComponent />, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
