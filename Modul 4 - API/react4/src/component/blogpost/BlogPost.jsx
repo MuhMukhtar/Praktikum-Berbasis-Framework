@@ -1,7 +1,7 @@
-import React, {Component} from "react";
+import React from "react";
 
 const Post = (props) => {
-    return(
+    return (
         <div className="artikel">
             <div className="gambar-artikel">
                 <img src="http://placeimg.com/80/80/tech" alt="Gambar Thumbnail Artikel" />
