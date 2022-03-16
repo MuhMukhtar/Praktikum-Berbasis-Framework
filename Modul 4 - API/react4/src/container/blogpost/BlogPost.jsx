@@ -2,15 +2,45 @@ import React, {Component} from "react";
 import "./BlogPost.css";
 import Post from "../../component/blogpost/BlogPost";
 
+// class BlogPost extends Component{
+//     render() {
+//         return(
+//             <div class="post-artikel">
+//                 <h2>Daftar Artikel</h2>
+//                 <Post judul="JTI Polinema" isi="Jurusan Teknologi Informasi - Politeknik Negeri Malang"/>
+//             </div>
+//         )
+//     }
+// }
+
 class BlogPost extends Component{
+    state = {
+        listArtikel: []
+    }
+
+    componentDidMount(){
+        fetch('https://jsonplaceholder.typicode.com/posts')
+            .then(response => response.json())
+            .then(jsonHasilAmbilDariAPI => {
+                this.setState({
+                    listArtikel: jsonHasilAmbilDariAPI
+                })
+            })
+    }
+
     render() {
         return(
-            <div class="post-artikel">
+            <div className="post-artikel">
                 <h2>Daftar Artikel</h2>
-                <Post judul="JTI Polinema" isi="Jurusan Teknologi Informasi - Politeknik Negeri Malang"/>
+                {
+                    this.state.listArtikel.map(artikel => {
+                        return <Post key = {artikel.id} judul = {artikel.title} isi = {artikel.body}/>
+                    })
+                }
             </div>
         )
     }
 }
+
 
 export default BlogPost;
