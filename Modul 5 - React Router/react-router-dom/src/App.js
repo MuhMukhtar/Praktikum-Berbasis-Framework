@@ -3,7 +3,12 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  useParams,
+  useRouteMatch,
+  Redirect,
+  useHistory,
+  useLocation
 } from "react-router-dom";
 
 // export default function BasicExample(){
