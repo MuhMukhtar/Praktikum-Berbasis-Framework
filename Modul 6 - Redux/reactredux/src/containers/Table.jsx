@@ -59,7 +59,7 @@ class Table extends Component {
                                         {todo.text} {todo.completed === true ? "(completed)" : ""}
                                     </td>
                                     <td>
-                                        <span
+                                    <span
                                             className="bi bi-dash-square"
                                             onClick={() => this.props.deleteTodo(todo.id)}
                                             style={{
