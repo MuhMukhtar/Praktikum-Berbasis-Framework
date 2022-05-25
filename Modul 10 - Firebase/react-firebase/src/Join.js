@@ -59,8 +59,8 @@ const Login = () => {
                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="logo" />
                     Login With Google
                 </button>
-                <button type="submit">Login</button>
-                <span>{error}</span>
+                <button type="submit">Join</button>
+                {/* <span>{error}</span> */}
             </form>
         </div>
     )
