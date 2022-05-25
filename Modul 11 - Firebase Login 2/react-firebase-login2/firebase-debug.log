@@ -1,0 +1,135 @@
+[debug] [2022-05-25T03:00:00.678Z] ----------------------------------------------------------------------
+[debug] [2022-05-25T03:00:00.680Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mukhtar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-05-25T03:00:00.681Z] CLI Version:   11.0.0
+[debug] [2022-05-25T03:00:00.681Z] Platform:      win32
+[debug] [2022-05-25T03:00:00.681Z] Node Version:  v16.14.0
+[debug] [2022-05-25T03:00:00.682Z] Time:          Wed May 25 2022 11:00:00 GMT+0800 (Central Indonesia Time)
+[debug] [2022-05-25T03:00:00.683Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-25T03:00:00.759Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-25T03:00:00.759Z] > authorizing via signed-in user (1941720194@student.polinema.ac.id)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Semester 6\Pemrograman Berbasis Framework\Praktikum Pemrorgraman Berbasis Framework\Modul 11 - Firebase Login 2\react-firebase-login2
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-05-25T03:00:34.339Z] Using project from CLI flag: react-firebase2-fab20
+[debug] [2022-05-25T03:00:34.341Z] > refreshing access token with scopes: []
+[debug] [2022-05-25T03:00:34.342Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-25T03:00:34.495Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 25 May 2022 03:00:33 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-25T03:00:34.510Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-firebase2-fab20 [none]
+[debug] [2022-05-25T03:00:34.929Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-firebase2-fab20 200
+[debug] [2022-05-25T03:00:34.930Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-firebase2-fab20 {"projectId":"react-firebase2-fab20","projectNumber":"958000580852","displayName":"react-firebase2","name":"projects/react-firebase2-fab20","resources":{"hostingSite":"react-firebase2-fab20","storageBucket":"react-firebase2-fab20.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] i  Using project react-firebase2-fab20 (react-firebase2) 
+[info] 
+=== Firestore Setup
+[debug] [2022-05-25T03:00:34.941Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/react-firebase2-fab20/services/firestore.googleapis.com [none]
+[debug] [2022-05-25T03:00:36.426Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/react-firebase2-fab20/services/firestore.googleapis.com 200
+[debug] [2022-05-25T03:00:36.427Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/react-firebase2-fab20/services/firestore.googleapis.com [omitted]
+[debug] [2022-05-25T03:00:36.427Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-05-25T03:00:36.427Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-25T03:00:36.537Z] <<< HTTP RESPONSE 200 {"date":"Wed, 25 May 2022 03:00:35 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-25T03:00:36.549Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/react-firebase2-fab20  
+ 
+[debug] [2022-05-25T03:00:37.037Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 25 May 2022 03:00:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-25T03:00:37.038Z] database_type: CLOUD_FIRESTORE
+[debug] [2022-05-25T03:00:37.038Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-25T03:00:37.038Z] > authorizing via signed-in user (1941720194@student.polinema.ac.id)
+[debug] [2022-05-25T03:00:37.039Z] [iam] checking project react-firebase2-fab20 for permissions ["firebase.projects.get"]
+[debug] [2022-05-25T03:00:37.039Z] > refreshing access token with scopes: []
+[debug] [2022-05-25T03:00:37.039Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-25T03:00:37.152Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Wed, 25 May 2022 03:00:36 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-25T03:00:37.164Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-firebase2-fab20:testIamPermissions [none]
+[debug] [2022-05-25T03:00:37.165Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-firebase2-fab20:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-05-25T03:00:38.270Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-firebase2-fab20:testIamPermissions 200
+[debug] [2022-05-25T03:00:38.270Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-firebase2-fab20:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-05-25T03:01:00.943Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/react-firebase2-fab20/releases pageSize=10&pageToken=
+[debug] [2022-05-25T03:01:01.407Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/react-firebase2-fab20/releases 200
+[debug] [2022-05-25T03:01:01.407Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/react-firebase2-fab20/releases {"releases":[{"name":"projects/react-firebase2-fab20/releases/cloud.firestore","rulesetName":"projects/react-firebase2-fab20/rulesets/d44f94cd-163d-4428-b212-e46cc7629876","createTime":"2022-05-23T11:37:02.467480Z","updateTime":"2022-05-25T02:09:46.821523Z"}]}
+[debug] [2022-05-25T03:01:01.408Z] Found ruleset: projects/react-firebase2-fab20/rulesets/d44f94cd-163d-4428-b212-e46cc7629876
+[debug] [2022-05-25T03:01:01.408Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/react-firebase2-fab20/rulesets/d44f94cd-163d-4428-b212-e46cc7629876 [none]
+[debug] [2022-05-25T03:01:01.738Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/react-firebase2-fab20/rulesets/d44f94cd-163d-4428-b212-e46cc7629876 200
+[debug] [2022-05-25T03:01:01.738Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/react-firebase2-fab20/rulesets/d44f94cd-163d-4428-b212-e46cc7629876 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-05-25T03:01:06.431Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-05-25T03:01:06.432Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-25T03:01:06.433Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-05-25T03:01:06.433Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-25T03:01:06.559Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 25 May 2022 03:01:05 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-25T03:01:06.573Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/react-firebase2-fab20/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2022-05-25T03:01:06.576Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 25 May 2022 03:01:05 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-25T03:01:06.589Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/react-firebase2-fab20/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2022-05-25T03:01:07.998Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 25 May 2022 03:01:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-25T03:01:07.999Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 25 May 2022 03:01:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2022-05-25T03:01:16.933Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-05-25T03:01:17.070Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-05-25T03:01:17.070Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.8.1","browserURL":"https://www.gstatic.com/firebasejs/9.8.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.8.1/firebase.tgz"},"live":{"version":"9.8","browserURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.8.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.8.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.8.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.8.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.8.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.8.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.8.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.8.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.8.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.8.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Detected a .git folder at D:\Semester 6\Pemrograman Berbasis Framework\Praktikum Pemrorgraman Berbasis Framework 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=69137309&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-05-25T03:01:40.101Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"ce0b2f6d57fa7b4704f9","redirect_uri":"http://localhost:9005","state":"69137309"}
+[debug] [2022-05-25T03:01:40.532Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Wed, 25 May 2022 03:01:39 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"171d701edfa84bda997baa0093b2aa12\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events *.actions.githubusercontent.com wss://*.actions.githubusercontent.com online.visualstudio.com/api/v1/locations github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ github-production-user-asset-6210df.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"D9F0:4E4E:9845FF:B2A655:628D9C13"}
+[debug] [2022-05-25T03:01:40.539Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-05-25T03:01:41.056Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-05-25T03:01:41.056Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"MuhMukhtar","id":71861839,"node_id":"MDQ6VXNlcjcxODYxODM5","avatar_url":"https://avatars.githubusercontent.com/u/71861839?v=4","gravatar_id":"","url":"https://api.github.com/users/MuhMukhtar","html_url":"https://github.com/MuhMukhtar","followers_url":"https://api.github.com/users/MuhMukhtar/followers","following_url":"https://api.github.com/users/MuhMukhtar/following{/other_user}","gists_url":"https://api.github.com/users/MuhMukhtar/gists{/gist_id}","starred_url":"https://api.github.com/users/MuhMukhtar/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/MuhMukhtar/subscriptions","organizations_url":"https://api.github.com/users/MuhMukhtar/orgs","repos_url":"https://api.github.com/users/MuhMukhtar/repos","events_url":"https://api.github.com/users/MuhMukhtar/events{/privacy}","received_events_url":"https://api.github.com/users/MuhMukhtar/received_events","type":"User","site_admin":false,"name":"mukhtar","company":null,"blog":"","location":"Bali, Indonesia","email":null,"hireable":null,"bio":null,"twitter_username":"mukhtarb_","public_repos":19,"public_gists":0,"followers":3,"following":5,"created_at":"2020-09-25T02:55:33Z","updated_at":"2022-05-25T03:01:31Z","private_gists":0,"total_private_repos":3,"owned_private_repos":3,"disk_usage":15423,"collaborators":1,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as MuhMukhtar 
+[info] 
+[debug] [2022-05-25T03:01:47.704Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-05-25T03:01:48.066Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-05-25T03:01:48.066Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-05-25T03:01:49.351Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-05-25T03:01:49.702Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-05-25T03:01:49.702Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-05-25T03:01:51.787Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2022-05-25T03:01:52.158Z] <<< [apiv2][status] GET https://api.github.com/repos/y/actions/secrets/public-key 404
+[debug] [2022-05-25T03:01:52.158Z] <<< [apiv2][body] GET https://api.github.com/repos/y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
